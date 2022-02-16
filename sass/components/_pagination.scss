@@ -1,0 +1,45 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  &__prev {
+    height: 2rem;
+    color: $color-slider;
+    opacity: 0.4;
+
+    &--icon {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    margin: 0 7rem;
+
+    &--circle {
+      height: 0.8rem;
+      width: 0.8rem;
+      border-radius: 100%;
+      background: $color-slider;
+      cursor: pointer;
+
+      &:not(:first-child) {
+        opacity: 0.3;
+      }
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &__next {
+    color: $color-slider;
+    &--icon {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}

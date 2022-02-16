@@ -1,0 +1,10 @@
+.line {
+  background: $color-black;
+  height: 2px;
+  width: 4rem;
+  border-radius: 0.5rem;
+
+  &--bg {
+    background: $color-white;
+  }
+}
